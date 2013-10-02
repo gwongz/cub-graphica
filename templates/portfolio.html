@@ -9,7 +9,7 @@
 	<link href="../static/style.css" rel="stylesheet">
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="js/jquery.slides.min.js"></script>
+	<script src="js/jquery.slides.min.js"></script>
 </head>
 
 <body>
@@ -17,47 +17,37 @@
 		<nav>
     		<ul>		
        			<li class="gray"><a href="index.html">Home</a></li>
-           
-         <!--        <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li> -->
-       
-
     		</ul>
 		</nav>
 	</div>
 	<div id="wrapper">
+		<div class="slide-container">
+			<div id="slides"> 
+				<a href="http://money.cnn.com/news/economy/mba100/2013/snapshots/1.html" target="_blank"><img src="images/mba_800_600.png"></a>
+				<a href="http://edition.cnn.com/2012/11/13/world/asia/solar-eclipse-australia-explained" target="_blank"><img src="images/solar_800_600.png"></a>
+				<a href="http://money.cnn.com/gallery/pf/2012/11/01/best-new-jobs-in-america/" target="_blank"><img src="images/new_jobs_800_600.png"></a>
+				<a href="http://money.cnn.com/magazines/moneymag/best-jobs/2011/jobs-helping-others/1.html" target="_blank"><img src="images/best_jobs_800_600.png"></a>
 
-				<div class="slide-container">
-					<div id="slides"> 
-							<a href="http://money.cnn.com/news/economy/mba100/2013/snapshots/1.html" target="_blank"><img src="images/mba_800_600.png"></a>
-							<a href="http://edition.cnn.com/2012/11/13/world/asia/solar-eclipse-australia-explained" target="_blank"><img src="images/solar_800_600.png"></a>
-							<a href="http://money.cnn.com/gallery/pf/2012/11/01/best-new-jobs-in-america/" target="_blank"><img src="images/new_jobs_800_600.png"></a>
-							<a href="http://money.cnn.com/magazines/moneymag/best-jobs/2011/jobs-helping-others/1.html" target="_blank"><img src="images/best_jobs_800_600.png"></a>
+				<a href="http://edition.cnn.com/2010/WORLD/meast/03/12/bahrain.metal.music/index.html" target="_blank"><img src="static/images/bahrain_800_600.png"></a>
 
-							<a href="http://edition.cnn.com/2010/WORLD/meast/03/12/bahrain.metal.music/index.html" target="_blank"><img src="static/images/bahrain_800_600.png"></a>
+				<a href="http://edition.cnn.com/2011/WORLD/asiapcf/03/17/japan.elderly.victims/index.html" target="_blank"><img src="static/images/japan_800_600.png"></a>
 
-							<a href="http://edition.cnn.com/2011/WORLD/asiapcf/03/17/japan.elderly.victims/index.html" target="_blank"><img src="static/images/japan_800_600.png"></a>
-
-							<a href="http://edition.cnn.com/2010/SHOWBIZ/Movies/01/21/robert.redford.sundance/index.html" target="_blank"><img src="static/images/redford_800_600.png"></a>
-
-					
-						
-						<a href="#" class="slidesjs-previous slidesjs-navigation">
-							<i class="icon-chevron-sign-left icon-large"></i></a>
-						<a href="#" class="slidesjs-next slidesjs-navigation">
-							<i class="icon-chevron-sign-right icon-large"></i></a>
-					</div>
-				</div>
+				<a href="http://edition.cnn.com/2010/SHOWBIZ/Movies/01/21/robert.redford.sundance/index.html" target="_blank"><img src="static/images/redford_800_600.png"></a>
+				
+				<a href="#" class="slidesjs-previous slidesjs-navigation">
+					<i class="icon-chevron-sign-left icon-large"></i></a>
+				<a href="#" class="slidesjs-next slidesjs-navigation">
+					<i class="icon-chevron-sign-right icon-large"></i></a>
+			</div>
+		</div>
 
 			
-			<footer>
+		<footer>
 			<p>&copy 2013 Grace Wong</p>
 		</footer>
-
+	</div>
 
 	<script>
-
 		$(document).ready (function () {
 			$('#slides').slidesjs({
 				width: 700,
@@ -70,7 +60,5 @@
 		});
 
 	</script>
-
-</div>
 </body>	
 </html>
