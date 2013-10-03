@@ -1,0 +1,47 @@
+{
+    "stories": [
+        {
+            "title": "",
+            "url": "http://money.cnn.com/news/economy/mba100/2013/snapshots/1.html",
+            "img": "mba.png"
+        },
+        {
+            "title": "Bahrain",
+            "url": "http://edition.cnn.com/2012/11/13/world/asia/solar-eclipse-australia-explained",
+            "img": "eclipse.png"
+        },
+          {
+            "title": "",
+            "url": "http://money.cnn.com/gallery/pf/2012/11/01/best-new-jobs-in-america/",
+            "img": "new_jobs.png"
+        },
+          {
+            "title": "",
+            "url": "http://money.cnn.com/magazines/moneymag/best-jobs/2011/jobs-helping-others/1.html",
+            "img": "best_jobs.png"
+        },
+   
+        {
+            "title": "",
+            "url": "http://edition.cnn.com/2010/WORLD/meast/03/12/bahrain.metal.music/index.html",
+            "img": "bahrain.png"
+        },
+        {
+            "title": "",
+            "url": "http://edition.cnn.com/2011/WORLD/asiapcf/03/17/japan.elderly.victims/index.html",
+            "img": "japan.png"
+        },
+        {
+            "title": "",
+            "url": "http://edition.cnn.com/2010/SHOWBIZ/Movies/01/21/robert.redford.sundance/index.html",
+            "img": "redford.png"
+        }
+    ]
+}
+
+        
+      
+
+
+
+
