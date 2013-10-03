@@ -64,11 +64,6 @@ li {
 	list-style: none;
 }
 
-footer {
-	margin: 0;
-	padding-top: 20px;
-}
-
 h1 {
 	font-family: 'lato-ultra-light';
 	font-size: 1.6em;
@@ -89,9 +84,11 @@ h3 {
 
 footer p {
 	font-size: .8em;
+	padding-top: 20px;
 	padding-bottom: 15px;
 	color: #000;
 	font-family: 'lato-light';
+	width: 85%;
 }
 
 a:link{
@@ -198,77 +195,78 @@ section {width: 90%;}
 
 .social a:hover {opacity: 1;}
 
-/*  EDITORIAL SLIDESHOW 	============================================================================= */
+/*  SLIDESHOW 	============================================================================= */
 	
 .slide-container {
 	width: 700px;
 	height: 400px;
 	margin: 0 auto;
 	padding-top: 120px;
-	padding-bottom: 50px; 	
+	padding-bottom: 50px; 
+	font: 'lato';	
  }
 
-#slides img {border: 1px solid #ccc;}
-    
-#slides {display: none;}
+.slide-container a:hover{
+	color: black;
+}	
 
-#slides .slidesjs-navigation {
-  	margin-top:5px;
-    padding-left: 5px;
- }
+#slides {
+      display: none
+    }
 
-#slides .slidesjs-previous {   
-  	margin-right: 5px;
-  	float: left;
-}
+    img {
+    	border: 1 px solid #ccc;
+    }
 
-#slides .slidesjs-next {
-  	margin-right: 5px;
-  	float: left;
-}
+    /* Center the slideshow */
+    .container {
+      margin: 0 auto
+    }
 
-.slidesjs-pagination {
-    margin: 6px 0 0;
-    float: right;
-    list-style: none;
-    padding-right: 5px;
-}
+    .slidesjs-navigation {
+    	padding-right: 10px;
+    }
 
-.slidesjs-pagination li {
-    float: left;
-    margin: 0 1px;
-}
+    .slidesjs-pagination-item {
+    	display: none;
+    }
 
-.slidesjs-pagination li a {
-      display: block;
-      width: 13px;
-      height: 0;
-      padding-top: 13px;
-      background-image: url(/images/pagination.png);
-      background-position: 0 0;
-      float: left;
-      overflow: hidden;
-}
+    /* Media queries for a responsive layout */
 
-.slidesjs-pagination li a.active,
-.slidesjs-pagination li a:hover.active {
-    background-position: 0 -13px
-}
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .container {
+        width: auto
+      }
+    }
 
-.slidesjs-pagination li a:hover {
-   background-position: 0 -13px
-}
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .container {
+        width: auto
+      }
+    }
 
-#slides a:link,
-#slides a:visited {text-decoration: none;}
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px
+      }
+    }
 
-#slides a:hover,
-#slides a:active {
-  text-decoration: none;
-  background-color: transparent;
-}  
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px
+      }
+    }
 
-/* MEDIA QUERIES */
+
+/* OVERALL MEDIA QUERIES */
 
 @media screen and (max-width: 649px) {
 	#container-left img {display: none;}

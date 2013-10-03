@@ -1,34 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Grace Wong">
-  <meta name="author" content="Grace Wong">
-  <title>Grace Wong</title>
-  <link href="../static/style.css" rel="stylesheet">
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-</head>
-
-<body>
-  <!--fixed navbar -->
-  <div id="nav-container">
-    <nav>
-        <ul>    
-            <li class="gray"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-          </ul>
-    </nav>
-  </div>
-  
+{% extends "base.html" %}
+{% block body %}  
   <div id="wrapper">  
     <div id="main">
       <div id="photo-container">
         <div id="container">
           <div id="container-left">
-            <img src="../static/images/bw_circle.png" alt="Grace Wong"/>
+            <img src="{{url_for('static', filename='images/bw_circle.png')}}" alt="Grace Wong"/>
           </div>
           <div id="container-right">
             <h1 class="tagline">Grace</h1><br>
@@ -47,7 +24,7 @@
           it's pretty awesome to point to something and say, "I built that!"
           <br>
 
-          <div class="details"><a href="#more"><h3>more</h3></a></div>
+          <div class="details"><a href="http://www.cubgraphica.com/#more"><h3>more</h3></a></div>
           <div class="more"><br>
           
 
@@ -83,14 +60,14 @@
               </li>
               <li>
                 <i class="icon-angle-right"></i> 
-                <a href="portfolio.html">Editorial</a> - stories I've written
+                <a href="/portfolio">Editorial</a> - stories I've written
               </li>
             <ul>
         </div>  
         <div id="contact" class="content">
           <h1>contact</h1><br>
             I'm currently available for new projects. 
-            <a href="mailto:gwongz@gmail.com?Subject=from website" target="_blank">
+            <a href="mailto:gwongz@gmail.com?subject=from website" target="_blank">
             Email</a> me to talk about your project or just to say hello.<br><br>
           
           <span class="social">
@@ -113,9 +90,6 @@
         </div>
       </section>
     </div><!-- end main-->
-    <footer>
-      <p>&copy 2013 Grace Wong</p>
-    </footer>
   </div><!--end wrapper-->
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
@@ -138,8 +112,6 @@
           $("div.details a").show(100);
         });
     });
-
   </script>
-</body>
-</html>
 
+{% endblock %}
