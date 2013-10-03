@@ -1,0 +1,6 @@
+*.DS_Store
+*.pyc
+
+/portfolio_screengrabs
+/env
+/static/standard/
