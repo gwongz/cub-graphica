@@ -242,12 +242,12 @@ a:hover{
 	.span_1_of_3 {width: 100%;}
 	.tagline{
 		width: 100%;
-		font-size: 70px;
+		font-size: 60px;
 		text-align: center;
 	}
 	.small {
 		width: 100%;
-		font-size: 12px;
+		font-size: 10px;
 		text-align: center;
 	}
 	.content {width: 100%;}
