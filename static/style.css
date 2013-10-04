@@ -263,6 +263,13 @@ section {width: 90%;}
       .container {
         width: 1170px
       }
+      .slide-container {
+		width: 700px;
+		height: 400px;
+		margin: 0 auto;
+		padding-top: 120px;
+		font: 'lato';	
+ }
     }
 
 
