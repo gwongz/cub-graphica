@@ -118,19 +118,20 @@ a:hover{
 }
 
 #photo-container, 
-section {width: 90%;}
+section {width: 90%;
+clear:both;}
 
 #container{
 	width: 100%;
 	display: inline-block;
 }
 
-#container-left{
+.container-left{
 	width: 35%;
 	float: left;
 }
 
-#container-left img {
+.container-left img {
 	width: 200px;
 	float: right;
 	margin-right: 15%;
@@ -138,7 +139,7 @@ section {width: 90%;}
 
 }
 
-#container-right{
+.container-right{
 	width: 55%;
 	float: right;
 	margin-right: 10%;
@@ -196,7 +197,7 @@ section {width: 90%;}
 .social a:hover {opacity: 1;}
 
 /*  SLIDESHOW 	============================================================================= */
-	
+
 .slide-container {
 	width: 700px;
 	height: 400px;
@@ -234,7 +235,7 @@ section {width: 90%;}
     /* Media queries for a responsive layout */
 
     /* For tablets & smart phones */
-    @media (max-width: 767px) {
+/*    @media (max-width: 767px) {
       body {
         padding-left: 10px;
         padding-right: 10px;
@@ -242,21 +243,55 @@ section {width: 90%;}
       .container {
         width: auto
       }
-    }
+    }*/
 
-    /* For smartphones */
-    @media (max-width: 480px) {
-      .container {
-        width: auto
-      }
-    }
+@media (min-width: 481px) and (max-width: 767px) {
+	nav {
+		max-width: 767px;
+		width: 100%;
+	}
+	#photo-container {
+		max-width: 767px;
+		width: auto;
+	}
 
+	.container-left img{
+		width: 70%;
+	}
+	.content {
+		width: 90%;
+	}
+	.tagline{
+		font-size: 70px;
+	}
+	.small {
+		font-size: 12px;
+	}
+}
     /* For smaller displays like laptops */
-    @media (min-width: 768px) and (max-width: 979px) {
-      .container {
-        width: 724px
-      }
-    }
+@media (min-width: 768px) and (max-width: 979px) {	
+	nav {
+		max-width: 767px;
+		width: 100%;
+	}
+	#photo-container {
+		max-width: 767px;
+		width: 90%;
+	}
+
+	.container-left img{
+		width: 80%;
+	}
+	.content {
+		width: 100%;
+	}
+	.tagline{
+		font-size: 80px;
+	}
+	.small {
+		font-size: 18px;
+	}
+}
 
     /* For larger displays */
     @media (min-width: 1200px) {
@@ -273,44 +308,84 @@ section {width: 90%;}
     }
 
 
-/* OVERALL MEDIA QUERIES */
 
-@media screen and (max-width: 649px) {
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	nav {
+		max-width: 480px;
+		width: 100%;
+	}
+	.container-left, .container-right{
+		width: 100%;
+		max-width: 480px;
+		margin: 0 auto;
+
+	}
+
+	/*.container-left img{
+		width: 60%;
+	}*/
+
+
+	.tagline h1{
+		width: 100%;
+		font-size: 60px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.small h2{
+		width: 100%;
+		font-size: 12px;
+		margin: 0 auto;
+	}
+
+	body {
+		font-size: 14px;
+	}
+
+	.content {
+		width: 90%;
+	}
+}
+
+/*@media screen and (max-width: 649px) {
 	#container-left img {display: none;}
-	
+
 	#container-left {width: 0}
-	
+
 	#container-right{
 		width: 100%;
 		margin: 0 auto;
 	}
-	
+
 	.tagline{text-align: center;}
-	
+
 	.small{font-size:.8em;}
-}
-@media screen and (min-width: 650px) and (max-width: 818px){
+}*/
+/*@media screen and (min-width: 650px) and (max-width: 818px){
 	#container-left img{
 		width: 70%;
 		margin: 0;
 		float: left;
 	}
-	
+
 	#container-left{max-width: 35%;}
-	
+
 	#container-right{
 		max-width: 65%;
 		margin: 0;
 		display: block;
 	}
 	.small{font-size: .8em;}
-}
+}*/
 
 @media screen and (min-width: 851px) and (max-width:970px){
 	#container-left img {width: 70%;}
-	
+
 	#container-left{width:30%;}
-	
+
 	#container-right{
 		width: 70%
 		margin: 0 auto;
@@ -344,3 +419,5 @@ section {width: 90%;}
 		height: auto;
 	}
 }
+
+

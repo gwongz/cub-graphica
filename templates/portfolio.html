@@ -3,7 +3,7 @@
 {% block body %}
 
   <!-- define the width of the slideshow -->
-  <div class="slide-container">
+  <!-- <div class="slide-container"> -->
   <div class="container">
     <div id="slides">
       {% for story in stories %}
@@ -12,7 +12,7 @@
       {% endfor %}
     </div>
   </div>
-  </div>
+  
  
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script src="{{url_for('static', filename='js/jquery.slides.min.js')}}"></script>
@@ -35,5 +35,7 @@
       });
     });
   </script>
+<!--   </div> -->
 
 {% endblock %}
+
