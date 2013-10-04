@@ -2,31 +2,30 @@
 {% block body %}  
   <div id="wrapper">  
     <div id="main">
-      <div id="photo-container">
-        <!-- <div id="container"> -->
-          <div class="container-left">
-            <img src="{{url_for('static', filename='images/bw_circle.png')}}" alt="Grace Wong"/>
-          </div>
-          <div class="container-right">
-            <h1 class="tagline">Grace</h1><br>
-            <h1 class="tagline">Wong</h1><br>
-            <h2 class="small">{ developer \\ storyteller }</h2>
-          </div>
-        <!-- </div> -->
-      </div>  <!--end photo-container-->  
+      <div class="section group"> 
+        <div id="photo">
+          <img src="{{url_for('static', filename='images/bw_circle.png')}}" alt="Grace Wong"/>
+        </div>
+     
+        <div class="col span_2_of_3">
+          <span class="tagline">Grace<br>Wong<br></span>
+          <span class="small">{ developer \\ storyteller }</span>
+        </div>
+      </div>    
       
       <section>
         <div id="about" class="content">
           <h1>about</h1><br>
           <p>tl;dr</p>
-          <p>I used to be a journalist. Now I'm a programmer. I made the 
-          transition because I love the challenge of technical thinking and 
-          it's pretty awesome to point to something and say, "I built that!"
-          </p>
-
-         
+          <p>I used to be a journalist. Now I'm a programmer. I 
+          made the transition because I love the challenge of 
+          technical thinking and it's pretty awesome to point to 
+          something and say, "I built that!"</p>
+          
           <div class="details">
-            <a href="http://www.cubgraphica.com/#more"><h3>more</h3></a><br>
+            <span class="slidedown">
+            <a href="http://www.cubgraphica.com/#more">more</a>
+            </span>
           </div>
          
           <div class="more">
@@ -34,10 +33,11 @@
             I worked as an online journalist, covering breaking news and features.
             I took a HTML and CSS class on a whim, loved it, and found my way to 
             <a href="http://www.hackbrightacademy.com" target="_blank">Hackbright 
-            Academy</a>, a 10-week program that aims to make women awesome programmers. 
-            At Hackbright, I rapidly learned new skills, including Python and Flask, 
-            and built my <a href="https://github.com/gwongz/font_seeker">
-            first project</a> from scratch. </p>
+            Academy</a>, a 10-week program that aims to make women awesome 
+            programmers. At Hackbright, I rapidly learned new skills, including 
+            Python and Flask, and built my 
+            <a href="https://github.com/gwongz/font_seeker"> first project</a> 
+            from scratch. </p>
           
             <p>I'm interested in the way technology is changing the way people 
             connect with each other and information, and I'm excited to finally 
@@ -45,7 +45,11 @@
             and beautiful web applications. I'm a generalist at heart and 
             enjoy working on products people love.</p>
           </div>
-          <div class="less"><a href="#"><h3>less</h3></a><br></div> 
+          <div class="less">
+            <span class="slidedown">
+            <a href="#">less</a>
+            </span>
+          </div> 
         </div>
         <div id="projects" class="content">
           <h1>projects</h1><br>
@@ -117,5 +121,4 @@
         });
     });
   </script>
-
 {% endblock %}
