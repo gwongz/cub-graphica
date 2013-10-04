@@ -4,7 +4,8 @@
 
   <!-- define the width of the slideshow -->
   <!-- <div class="slide-container"> -->
-  <div class="container">
+  <div class="slide-container">
+    <!-- <div class="container"> -->
     <div id="slides">
       {% for story in stories %}
         <a href="{{story['url']}}">
@@ -12,6 +13,7 @@
       {% endfor %}
     </div>
   </div>
+
   
  
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
