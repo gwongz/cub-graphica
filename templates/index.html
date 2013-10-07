@@ -24,7 +24,7 @@
           
           <div class="details">
             <span class="slidedown">
-            <a href="http://www.cubgraphica.com/#more">more</a>
+            <a href="#more">more</a>
             </span>
           </div>
          
@@ -47,7 +47,7 @@
           </div>
           <div class="less">
             <span class="slidedown">
-            <a href="#">less</a>
+            <a href="#about">less</a>
             </span>
           </div> 
         </div>
@@ -116,8 +116,8 @@
 
       $("div.less").click(function() {
           $(this).hide();
-          $(more).slideUp(1000);
-          $("div.details a").show(100);
+          $("div.more").slideUp(1000);
+          $("div.details a").show();
         });
     });
   </script>
